@@ -12,15 +12,13 @@ abstract class Miembro{
 
     private $email;
 
-    private int $edad;
 
-    function __construct($id, $nombre, $apellidos, $email, $edad)
+    function __construct($id, $nombre, $apellidos, $email)
     {
         $this->id=$id;
         $this->nombre=$nombre;
         $this->apellidos=$apellidos;
         $this->email=$email;
-        $this->edad=$edad;
     }
 
     
@@ -78,19 +76,6 @@ abstract class Miembro{
         return $this;
     }
 
-
-    public function getEdad()
-    {
-        return $this->edad;
-    }
-
-
-    public function setEdad($edad)
-    {
-        $this->edad = $edad;
-
-        return $this;
-    }
 
     public function __toString()
     {
