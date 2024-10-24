@@ -4,7 +4,7 @@ namespace clases;
 
 class TriangleGenerator {
 
-    function generateTriangle(int $altura): string {
+    static function generateTriangle(int $altura): string {
         $piramide = '';
 
         if ($altura < 0) {
@@ -16,6 +16,7 @@ class TriangleGenerator {
         }
 
         for ($i = 0; $i < $altura; $i++) {
+            $piramide .= "<pre>";
             // Vamos a dibujar solo cuando el número de asteriscos es impar
             if ($i % 2 == 0) {
                 // Bucle para generar los espacios.
@@ -26,11 +27,12 @@ class TriangleGenerator {
                 for ($k = 0; $k <= $i; $k++) {
                     $piramide .= "*";
                 }
-                $piramide .= "<br/>";
+                
             }
+            $piramide .= "</pre>";
         }
 
         return $piramide;
     }
 }
-?>
+
