@@ -68,5 +68,10 @@ class Asignatura{
         $asignaturasDeMuestra[] = $asignatura4;
         return $asignaturasDeMuestra;
     }
+
+    public function __toString()
+    {
+        return "Nombre: " . $this->nombre. " " . ", Créditos: " . substr($this->creditos, 0, 1);
+    }
 }
 ?>
