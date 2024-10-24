@@ -82,4 +82,3 @@ abstract class Miembro{
         return "Nombre: " . $this->nombre. " " . $this->apellidos . ", Email: " . $this->email;
     }
 }
-?>

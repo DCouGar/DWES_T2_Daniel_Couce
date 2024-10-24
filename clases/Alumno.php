@@ -98,4 +98,3 @@ class Alumno extends Miembro{
         return $alumnosDeMuestra;
     }
 }
-?>

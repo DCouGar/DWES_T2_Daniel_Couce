@@ -74,4 +74,3 @@ class Asignatura{
         return "Nombre: " . $this->nombre. " " . ", Créditos: " . substr($this->creditos, 0, 1);
     }
 }
-?>

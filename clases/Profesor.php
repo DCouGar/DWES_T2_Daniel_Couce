@@ -56,4 +56,3 @@ class Profesor extends Miembro{
         return $profesores;
     }
 }
-?>
